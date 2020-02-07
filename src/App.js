@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css';
 import axios from 'axios'
 
+import Family from './Components/Family'
+import Progress from './Components/Progress'
+
 
 
 class App extends React.Component{
@@ -44,7 +47,8 @@ class App extends React.Component{
   render(){
     return (
         <div className="App">
-          App
+          <Family/>
+          <Progress/>
         </div>
     )
   }
