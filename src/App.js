@@ -45,10 +45,23 @@ class App extends React.Component{
   }
 
   render(){
+    const famList = this.state.family.map(e => {
+      return (
+        <Family 
+          member={e}
+        />
+      )
+    })
+
     return (
         <div className="App">
-          <Family/>
-          <Progress/>
+          <section className='fam'>
+            {famList}
+          </section>
+          <section>
+            <Progress />
+          </section>
+          
         </div>
     )
   }

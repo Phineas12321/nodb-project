@@ -1,5 +1,9 @@
 import React from 'react'
 
+import Week from './Week'
+import WeekEvents from './WeekEvents'
+import NextWeekButton from './NextWeekButton'
+
 class Progress extends React.Component{
     constructor(props){
         super(props)
@@ -13,7 +17,9 @@ class Progress extends React.Component{
     render(){
         return(
             <div>
-                Progress
+                <Week/>
+                <WeekEvents/>
+                <NextWeekButton/>
             </div>
         )
     }

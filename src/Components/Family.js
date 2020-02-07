@@ -1,4 +1,5 @@
 import React from 'react'
+import '../App.css'
 
 class Family extends React.Component{
     constructor(props){
@@ -13,7 +14,12 @@ class Family extends React.Component{
     render(){
         return(
             <div>
-                Family
+                <h1>
+                    Family
+                </h1>
+                <p className='family-list'>
+                    {this.props.member.name}
+                </p>
             </div>
         )
     }
