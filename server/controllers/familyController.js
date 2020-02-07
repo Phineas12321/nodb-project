@@ -20,7 +20,7 @@ module.exports = {
     },
 
     buryMember: (req, res) => {
-        let index = family.findIndex(() => {})
+        let index = family.findIndex((e) => e.id === +id)
         family.splice(index, 1)
         res.status(200).send(family)
     }
