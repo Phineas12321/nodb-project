@@ -11,11 +11,10 @@ module.exports = {
     },
 
     addMember: (req, res) => {
-        const {member} = req.body
-        member.id = id
-        id++
+        const {name} = req.body
 
-        family.push(member)
+        family.push({name, id})
+        id++
 
         res.status(200).send(family)
     },
