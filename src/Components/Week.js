@@ -1,9 +1,14 @@
 import React from 'react'
+import '../App.css'
 
 function Week(props){
     return(
         <div>
-            Week
+            <div className='week-style'>
+                Week {props.eachFirstWeek}
+                {props.eachSecondWeek}
+            </div>
+            
         </div>
     )
 }

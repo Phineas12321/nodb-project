@@ -35,3 +35,41 @@
   display: flex;
   justify-content: flex-start;
 }
+
+.week{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: dodgerblue;
+  width: 75vw;
+  height: 25vh;
+}
+
+.each-first-week{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.each-second-week{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.week-style{
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  background: deeppink;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  border: solid black 1px;
+
+}
+
+.on-trail{
+  font-size: 30px;
+}
