@@ -2,8 +2,11 @@ import React from 'react'
 
 function WeekEvents(props){
     return(
-        <div>
-            WeekEvents
+        <div className='week-events-style' >
+            <h1>THIS WEEK ON THE TRAIL</h1>
+            <div>
+                what happened on the trail
+            </div>
         </div>
     )
 }

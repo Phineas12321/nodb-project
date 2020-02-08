@@ -58,6 +58,15 @@ class App extends React.Component{
       )
     })
 
+    const famNames = this.state.family.map(e => {
+      return(
+        <Progress 
+          member = {this.state.family.e}
+          key = {e}
+        />
+      )
+    })
+
     return (
         <div className="App">
           <section className='fam'>
@@ -65,7 +74,7 @@ class App extends React.Component{
             {famList}
           </section>
           <section>
-            <Progress />
+            {famNames}
           </section>
           
         </div>
