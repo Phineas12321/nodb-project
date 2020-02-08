@@ -3,7 +3,10 @@ import React from 'react'
 function NextWeekButton(props){
     return(
         <div>
-            NextWeekButton
+            <button
+                className='next-btn'
+                onClick={()=>{props.nextWeekFn()}}
+            >Next Week{'>>'} </button>
         </div>
     )
 }

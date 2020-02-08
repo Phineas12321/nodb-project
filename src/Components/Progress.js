@@ -10,16 +10,21 @@ class Progress extends React.Component{
         super(props)
 
         this.state = {
-            nextWeek: () => {},
             firstWeeks: [1,2,3,4,5,6,7,8,9,10],
             secondWeeks: [11,12,13,14,15,16,17,18,19,20],
             week: 0
         }
+
+        this.nextWeekFn = this.nextWeekFn.bind(this)
     }
 
-    
+    nextWeekFn(){
+        return this.setState({week: this.state.week+1})
+    }
 
     render(){
+
+        
 
         let eachFirstWeek = this.state.firstWeeks.map((e)=>{
             return(
@@ -56,7 +61,8 @@ class Progress extends React.Component{
                     
                 </header>
                 <WeekEvents/>
-                <NextWeekButton/>
+                <NextWeekButton nextWeekFn ={this.nextWeekFn} />
+                {this.state.week}
             </div>
         )
     }
