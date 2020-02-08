@@ -49,6 +49,10 @@ class App extends React.Component{
       return (
         <Family 
           member={e}
+          addMember = {this.addMember}
+          family = {this.state.family}
+          editMember = {this.editMember}
+          buryMember = {this.buryMember}
         />
       )
     })
@@ -56,6 +60,7 @@ class App extends React.Component{
     return (
         <div className="App">
           <section className='fam'>
+            <h1>Family</h1>
             {famList}
           </section>
           <section>

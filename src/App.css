@@ -11,11 +11,27 @@
 
 .family-list{
   display: flex;
-  margin-left: 2vw;
 }
 
 .family-button{
   background: none;
   border: none;
-  font-size: 30px;
+  font-size: 15px;
+}
+
+.fam-input{
+  width: 50px;
+  background: none;
+  border: purple solid 1px;
+}
+
+.fam-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member-button{
+  display: flex;
+  justify-content: flex-start;
 }
