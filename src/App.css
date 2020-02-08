@@ -42,7 +42,7 @@
   justify-content: space-evenly;
   background: dodgerblue;
   width: 75vw;
-  height: 25vh;
+  height: 200px;
 }
 
 .each-first-week{
@@ -77,4 +77,5 @@
 .next-btn{
   background: dodgerblue;
   font-size: 40px;
+  border-radius: 10px;
 }

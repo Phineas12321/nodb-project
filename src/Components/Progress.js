@@ -12,14 +12,24 @@ class Progress extends React.Component{
         this.state = {
             firstWeeks: [1,2,3,4,5,6,7,8,9,10],
             secondWeeks: [11,12,13,14,15,16,17,18,19,20],
-            week: 0
+            week: 1
         }
 
         this.nextWeekFn = this.nextWeekFn.bind(this)
     }
 
     nextWeekFn(){
-        return this.setState({week: this.state.week+1})
+        this.setState({week: this.state.week+1})
+        for(let i =0; i<this.state.firstWeeks.length; i++){
+            if(this.state.firstWeeks[i] <= this.state.week){
+                this.state.firstWeeks[i] = 'done'
+            }
+        }
+        for(let i =0; i<this.state.secondWeeks.length; i++){
+            if(this.state.secondWeeks[i] <= this.state.week){
+                this.state.secondWeeks[i] = 'done'
+            }
+        }
     }
 
     render(){
@@ -32,6 +42,7 @@ class Progress extends React.Component{
                     eachFirstWeek={e}
                     week={this.state.week} 
                     nextWeek={this.state.week}
+                    key = {e}
                 />
             )
         })
@@ -42,6 +53,7 @@ class Progress extends React.Component{
                     eachSecondWeek={e}
                     week={this.state.week} 
                     nextWeek={this.state.week}
+                    key = {e}
                 />
             )
         })

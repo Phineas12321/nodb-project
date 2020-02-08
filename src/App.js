@@ -53,6 +53,7 @@ class App extends React.Component{
           family = {this.state.family}
           editMember = {this.editMember}
           buryMember = {this.buryMember}
+          key = {e}
         />
       )
     })
