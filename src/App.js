@@ -50,7 +50,6 @@ class App extends React.Component{
         <Family 
           member={e}
           addMember = {this.addMember}
-          family = {this.state.family}
           editMember = {this.editMember}
           buryMember = {this.buryMember}
           key = {e}
@@ -58,14 +57,14 @@ class App extends React.Component{
       )
     })
 
-    const famNames = this.state.family.map(e => {
-      return(
-        <Progress 
-          member = {this.state.family.e}
-          key = {e}
-        />
-      )
-    })
+    // let names = this.state.family.map((e)=>{
+    //   return(
+    //     <Progress
+    //       member = {e}
+    //       family = {this.state.family}
+    //     />
+    //   )
+    // })
 
     return (
         <div className="App">
@@ -74,7 +73,8 @@ class App extends React.Component{
             {famList}
           </section>
           <section>
-            {famNames}
+            {/* {names} */}
+            <Progress/>
           </section>
           
         </div>

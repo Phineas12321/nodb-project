@@ -1,5 +1,5 @@
 
-const family = [{name: 'You', id: 0}]
+const family = [{name: 'You', id: 0, isDead: false}]
 
 let id = 1
 
@@ -13,7 +13,7 @@ module.exports = {
     addMember: (req, res) => {
         const {name} = req.body
 
-        family.push({name, id})
+        family.push({name, id, isDead: false})
         id++
 
         res.status(200).send(family)

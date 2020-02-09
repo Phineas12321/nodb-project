@@ -12,7 +12,8 @@ class Progress extends React.Component{
         this.state = {
             firstWeeks: [1,2,3,4,5,6,7,8,9,10],
             secondWeeks: [11,12,13,14,15,16,17,18,19,20],
-            week: 1
+            week: 1,
+            dead: 0
         }
 
         this.nextWeekFn = this.nextWeekFn.bind(this)
@@ -30,6 +31,9 @@ class Progress extends React.Component{
                 this.state.secondWeeks[i] = 'done'
             }
         }
+        // if(this.state.dead = Math.random() >= 0.90){
+        //     this.props.family[Math.floor(Math.random()*this.props.family.length)].isDead = true
+        // }
     }
 
     render(){
@@ -75,6 +79,7 @@ class Progress extends React.Component{
                 <WeekEvents/>
                 <NextWeekButton nextWeekFn ={this.nextWeekFn} />
                 {this.state.week}
+                {"____"+this.state.dead}
             </div>
         )
     }
