@@ -8,6 +8,7 @@
   height: 100vh;
   background: black;
   color: lawngreen;
+  border-right: solid lawngreen 1px;
 }
 
 .family-list{
@@ -43,7 +44,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background: dodgerblue;
+  background: black;
+  color: lawngreen;
+  border-bottom: solid lawngreen 1px;
   width: 75vw;
   height: 200px;
 }
@@ -65,11 +68,11 @@
   font-size: 20px;
   justify-content: center;
   align-items: center;
-  background: deeppink;
+  background: none;
   height: 60px;
   width: 60px;
   border-radius: 50px;
-  border: solid black 1px;
+  border: solid lawngreen 1px;
 
 }
 
