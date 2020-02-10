@@ -3,11 +3,9 @@ import React from 'react'
 class WeekEvents extends React.Component{
     constructor(props){
         super(props)
-
-        this.state = {
-            // events: this.props.member.name
-        }
     }
+
+    
 
     render(){
         // for(let i = 0; i < this.props.family.length; i++){
@@ -20,8 +18,7 @@ class WeekEvents extends React.Component{
             <div className='week-events-style' >
                 <h1>THIS WEEK ON THE TRAIL</h1>
                 <div>
-                    {/* {this.state.events} */}
-                    hello
+                    {this.props.events}
                 </div>
             </div>
         )

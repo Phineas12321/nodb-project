@@ -3,11 +3,14 @@
   text-align: center;
 }
 
+* {
+  background: black;
+  color: lawngreen;
+}
+
 .fam{
   width: 25vw;
   height: 100vh;
-  background: black;
-  color: lawngreen;
   border-right: solid lawngreen 1px;
 }
 
@@ -19,14 +22,12 @@
   background: none;
   border: none;
   font-size: 15px;
-  color: lawngreen;
 }
 
 .fam-input{
   width: 50px;
   background: none;
   border: lawngreen solid 1px;
-  color: lawngreen;
 }
 
 .fam-box{
@@ -44,8 +45,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background: black;
-  color: lawngreen;
   border-bottom: solid lawngreen 1px;
   width: 75vw;
   height: 200px;
@@ -81,9 +80,10 @@
 }
 
 .next-btn{
-  background: dodgerblue;
+  background: none;
   font-size: 40px;
   border-radius: 10px;
+  border: solid lawngreen 1px;
 }
 
 .week-events-style{
