@@ -26,7 +26,10 @@ class Progress extends React.Component{
                 `One of your wagon wheels broke. It takes time, but you're able to fix it.  The caravan left you behind and you have to catch up.`,
                 `Rattlesnakes are a common site, but they're still dangerous!  One of your family members tries to play with one.  The poison spreads fast.  Someone in your family has died.`,
                 `Field mice found their way into your wagon.  You take everything out and find they're in your rations too.  You threaten them with your big scary boots and they scurry away.  You didn't lose much, but knowing mice were in the food makes you want to hurl.`,
-                `Rations are low and your family is starving.(You better find some meat soon)`
+                `Rations are low and your family is starving.(You better find some meat soon)`,
+                `You run into a traveller who says they're starving.  You tell them you don't have enough food to spare, but the traveller persists.  You get into a fight and the traveller is left dead.  Members of your family are now afraid to talk to you, as they should be.(you murderer)`,
+                `The trail can be boring, so the children of your family come up with a new game.  It ends horribly and an arm breaks.(better an arm than a leg)`,
+                `The brush on the trail is unkempt and full of ticks.  You have neglected to check your family for those parasites and one of your family members is developing a more serious case of lyme disease.  You try your best to treat the disease and get set back a couple days.`
             ],
             randomEvent: ''
         }
@@ -54,7 +57,9 @@ class Progress extends React.Component{
             this.setState({events: 'Congratulations!  You made it!'})
         }
 
-        if(this.state.week >= 20 || this.props.family.length === 0){
+        if(this.props.family.length === 0){
+            this.setState({randomEvent: 'Everyone in your family has died'})
+        }else if(this.state.week >= 20){
             this.setState({randomEvent: ''})
         }else if(this.state.week > 0){
             this.setState({randomEvent: this.state.subEvents[Math.floor(Math.random()*this.state.subEvents.length)]})
