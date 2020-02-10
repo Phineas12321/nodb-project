@@ -33,7 +33,8 @@ class Progress extends React.Component{
                 `You come across a pile of rocks that smells like death.  Atop the pile, you see what seems to be your cousin's favorite necklace.  The caravan moves on as you weep into the rocks.`,
                 `A mountain blocks your path.  Your wagon is barely too heavy to push up the steep path, and you have to let go of some personals.  A large painting of your family, your accordion, and some china dishes are left behind`,
                 `A party of bandits demands you give them all of your rations.  One of your family members tries to stand up to them, but the bandits are too much.  Out of fear and shock, you let the bandits shuffle through your wagon.  Someone in your family has died.`,
-                `Your family is complaining about the length of the trail.  You decide to rest for a day`
+                `Your family is complaining about the length of the trail.  You decide to rest for a day`,
+                `You have a dream where you are in Oregon, living in a house, protected from the elements.  You wake up on the ground and soaked from rain.`
             ],
             randomEvent: ''
         }
