@@ -17,7 +17,7 @@ class WeekEvents extends React.Component{
         return(
             <div className='week-events-style' >
                 <h1>THIS WEEK ON THE TRAIL</h1>
-                <div>
+                <div className='done-size'>
                     {this.props.events}
                 </div>
             </div>

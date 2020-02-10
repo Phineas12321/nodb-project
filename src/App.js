@@ -73,7 +73,6 @@ class App extends React.Component{
             {famList}
           </section>
           <section>
-            {/* {names} */}
             <Progress/>
           </section>
           

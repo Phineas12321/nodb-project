@@ -82,8 +82,6 @@ class Progress extends React.Component{
                 </header>
                 <WeekEvents events = {this.state.events} familyArr ={this.props.familyArr} />
                 <NextWeekButton nextWeekFn ={this.nextWeekFn} />
-                {this.state.week}
-                {"____"+this.state.dead}
             </div>
         )
     }
