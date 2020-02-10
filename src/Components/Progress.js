@@ -19,7 +19,11 @@ class Progress extends React.Component{
             [
                 `You come upon a river and try to walk across.  One of your family members cramps up and slips into the ice-cold depths.  Someone in your family has died.`,
                 `Someone in your family had a baby!  Although the trail isn't the most ideal place to raise a child, you welcome this addition to your family with open arms and a warm heart`,
-                `Nothing much happened this week.  You sang songs, argued with that weird guy in your caravan(wished he would stay away from your children, or better yet, died).  anyway, not a very eventful week.`,
+                `You argued with that weird guy in your caravan(you wish he would stay away from your children, or better yet, died).`,
+                `A trading post is in site!  The prices are high, but you manage to barter your way into getting a blanket and some rations.(yay warmth)`,
+                `Bandits came in the night and stole some rations.(You should consider setting up a night watch.)`,
+                `You find a bison who has lost their herd.  You pick up your rifle and aim.  You take a shot.  Another.  And one more. The bison finally slumps over and you carefully make your way over and skin the beast.  You have enough rations to last a couple weeks.`,
+
             ],
             randomEvent: ''
         }
@@ -46,9 +50,10 @@ class Progress extends React.Component{
         }else if(this.state.week >= 20){
             this.setState({events: 'Congratulations!  You made it!'})
         }
-        if(this.state.week >= 20){
+
+        if(this.state.week >= 20 || this.props.family.length === 0){
             this.setState({randomEvent: ''})
-        }else if(this.state.week >= 1){
+        }else if(this.state.week > 0){
             this.setState({randomEvent: this.state.subEvents[Math.floor(Math.random()*this.state.subEvents.length)]})
         }
     }
