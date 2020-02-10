@@ -54,7 +54,7 @@ class Progress extends React.Component{
                 this.state.secondWeeks[i] = 'done'
             }
         }
-        if(this.props.family.length === 0){
+        if(this.props.family.length === 0 || this.state.events === `GAME OVER`){
             this.setState({events: `GAME OVER`})
         }else if(this.state.week === 1){
             this.setState({events: ''})
@@ -62,7 +62,7 @@ class Progress extends React.Component{
             this.setState({events: 'Congratulations!  You made it!'})
         }
 
-        if(this.props.family.length === 0){
+        if(this.props.family.length === 0 ||this.state.events === `GAME OVER`){
             this.setState({randomEvent: 'Everyone in your family has died'})
         }else if(this.state.week >= 20){
             this.setState({randomEvent: ''})
