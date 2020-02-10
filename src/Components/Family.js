@@ -36,7 +36,7 @@ class Family extends React.Component{
                     </div>
                 ) : (
                     <div className='member-button'>
-                       <button className='family-button' onClick={()=>{this.props.buryMember(this.props.member.id)}} >{'+'} </button>
+                       <button className='family-button' onClick={()=>{this.props.buryMember(this.props.member.id)}} >{'-'} </button>
                         <p onDoubleClick={this.toggleEdit} className='family-list'>
                             {this.props.member.name}
                         </p> 
@@ -44,12 +44,12 @@ class Family extends React.Component{
                     
                 )}
                 
-                <section className='input-button'>
+                {/* <section className='input-button'>
                     <input className='fam-input' onChange={this.handleChange} />
                     <button className='family-button' onClick={() =>{this.props.addMember(this.state.userInput)}} >
                         add
                     </button>
-                </section>
+                </section> */}
                 
             </div>
         )

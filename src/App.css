@@ -25,6 +25,10 @@
   outline: none;
 }
 
+.input-button{
+  margin-bottom: 15px;
+}
+
 .fam-input{
   width: 50px;
   background: none;
@@ -106,4 +110,10 @@
 
 .rand-event-style{
   width: 50vw;
+}
+
+.list-box{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
