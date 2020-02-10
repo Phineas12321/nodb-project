@@ -19,11 +19,14 @@ class Progress extends React.Component{
             [
                 `You come upon a river and try to walk across.  One of your family members cramps up and slips into the ice-cold depths.  Someone in your family has died.`,
                 `Someone in your family had a baby!  Although the trail isn't the most ideal place to raise a child, you welcome this addition to your family with open arms and a warm heart`,
-                `You argued with that weird guy in your caravan(you wish he would stay away from your children, or better yet, died).`,
+                `You argued with that weird guy in your caravan.(you wish he would stay away from your children, or better yet, died)`,
                 `A trading post is in site!  The prices are high, but you manage to barter your way into getting a blanket and some rations.(yay warmth)`,
-                `Bandits came in the night and stole some rations.(You should consider setting up a night watch.)`,
+                `Bandits came in the night and stole some rations.(You should consider setting up a night watch)`,
                 `You find a bison who has lost their herd.  You pick up your rifle and aim.  You take a shot.  Another.  And one more. The bison finally slumps over and you carefully make your way over and skin the beast.  You have enough rations to last a couple weeks.`,
-
+                `One of your wagon wheels broke. It takes time, but you're able to fix it.  The caravan left you behind and you have to catch up.`,
+                `Rattlesnakes are a common site, but they're still dangerous!  One of your family members tries to play with one.  The poison spreads fast.  Someone in your family has died.`,
+                `Field mice found their way into your wagon.  You take everything out and find they're in your rations too.  You threaten them with your big scary boots and they scurry away.  You didn't lose much, but knowing mice were in the food makes you want to hurl.`,
+                `Rations are low and your family is starving.(You better find some meat soon)`
             ],
             randomEvent: ''
         }
