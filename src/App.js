@@ -72,8 +72,8 @@ class App extends React.Component{
                 {famList}
               </section>
               <section className='input-button'>
-                  <input className='fam-input' onChange={this.handleChange} />
-                  <button className='family-button' onClick={() =>{this.addMember(this.state.userInput)}} >
+                  <input className='fam-input' onChange={this.handleChange}/>
+                  <button className='family-button' onClick={() =>{this.addMember(this.state.userInput)}}>
                       add
                   </button>
               </section>
