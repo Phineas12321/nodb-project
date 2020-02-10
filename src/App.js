@@ -57,15 +57,6 @@ class App extends React.Component{
       )
     })
 
-    // let names = this.state.family.map((e)=>{
-    //   return(
-    //     <Progress
-    //       member = {e}
-    //       family = {this.state.family}
-    //     />
-    //   )
-    // })
-
     return (
         <div className="App">
           <section className='fam'>

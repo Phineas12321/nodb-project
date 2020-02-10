@@ -1,20 +1,16 @@
 import React from 'react'
+import '../App.css'
 
 class WeekEvents extends React.Component{
     constructor(props){
         super(props)
 
-        
+
     }
 
     
 
     render(){
-        // for(let i = 0; i < this.props.family.length; i++){
-        //     if(this.props.family[i].isDead){
-        //         this.setState({events: `${this.props.family[i].name} is dead`})
-        //     }
-        // }
 
         return(
             <div className='week-events-style' >
@@ -22,6 +18,9 @@ class WeekEvents extends React.Component{
                 <div className='done-size'>
                     {this.props.events}
                 </div>
+                <p className='rand-event-style'>
+                {this.props.randomEvent}
+                </p>
             </div>
         )
     }

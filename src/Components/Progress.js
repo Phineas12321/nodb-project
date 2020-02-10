@@ -14,7 +14,14 @@ class Progress extends React.Component{
             secondWeeks: [11,12,13,14,15,16,17,18,19,20],
             week: 1,
             dead: 0,
-            events: 'Nothing yet, keep going!'
+            events: 'You are going on the Oregon Trail.  Adventure lies ahead!',
+            subEvents: 
+            [
+                `You come upon a river and try to walk across.  One of your family members cramps up and slips into the ice-cold depths.  Someone in your family has died.`,
+                `Someone in your family had a baby!  Although the trail isn't the most ideal place to raise a child, you welcome this addition to your family with open arms and a warm heart`,
+                `Nothing much happened this week.  You sang songs, argued with that weird guy in your caravan(wished he would stay away from your children, or better yet, died).  anyway, not a very eventful week.`,
+            ],
+            randomEvent: ''
         }
 
         this.nextWeekFn = this.nextWeekFn.bind(this)
@@ -32,13 +39,17 @@ class Progress extends React.Component{
                 this.state.secondWeeks[i] = 'done'
             }
         }
-        // if(this.state.dead = Math.random() >= 0.90){
-        //     this.props.family[Math.floor(Math.random()*this.props.family.length)].isDead = true
-        // }
         if(this.props.family.length === 0){
             this.setState({events: `GAME OVER`})
+        }else if(this.state.week === 1){
+            this.setState({events: ''})
         }else if(this.state.week >= 20){
             this.setState({events: 'Congratulations!  You made it!'})
+        }
+        if(this.state.week >= 20){
+            this.setState({randomEvent: ''})
+        }else if(this.state.week >= 1){
+            this.setState({randomEvent: this.state.subEvents[Math.floor(Math.random()*this.state.subEvents.length)]})
         }
     }
 
@@ -82,7 +93,7 @@ class Progress extends React.Component{
                     </section>
                     
                 </header>
-                <WeekEvents events = {this.state.events} familyArr ={this.props.familyArr} />
+                <WeekEvents randomEvent = {this.state.randomEvent} events = {this.state.events} familyArr ={this.props.familyArr} />
                 <NextWeekButton nextWeekFn ={this.nextWeekFn} />
             </div>
         )
