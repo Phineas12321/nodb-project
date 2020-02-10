@@ -14,7 +14,7 @@ class Progress extends React.Component{
             secondWeeks: [11,12,13,14,15,16,17,18,19,20],
             week: 1,
             dead: 0,
-            events: 'You are going on the Oregon Trail.  Adventure lies ahead!',
+            events: "You are headed for Oregon City.  Adventure lies ahead!",
             subEvents: 
             [
                 `You come upon a river and try to walk across.  One of your family members cramps up and slips into the ice-cold depths.  Someone in your family has died.`,
@@ -29,7 +29,11 @@ class Progress extends React.Component{
                 `Rations are low and your family is starving.(You better find some meat soon)`,
                 `You run into a traveller who says they're starving.  You tell them you don't have enough food to spare, but the traveller persists.  You get into a fight and the traveller is left dead.  Members of your family are now afraid to talk to you, as they should be.(you murderer)`,
                 `The trail can be boring, so the children of your family come up with a new game.  It ends horribly and an arm breaks.(better an arm than a leg)`,
-                `The brush on the trail is unkempt and full of ticks.  You have neglected to check your family for those parasites and one of your family members is developing a more serious case of lyme disease.  You try your best to treat the disease and get set back a couple days.`
+                `The brush on the trail is unkempt and full of ticks.  You have neglected to check your family for those parasites and one of your family members is developing a more serious case of lyme disease.  You try your best to treat the disease and get set back a couple days.`,
+                `You come across a pile of rocks that smells like death.  Atop the pile, you see what seems to be your cousin's favorite necklace.  The caravan moves on as you weep into the rocks.`,
+                `A mountain blocks your path.  Your wagon is barely too heavy to push up the steep path, and you have to let go of some personals.  A large painting of your family, your accordion, and some china dishes are left behind`,
+                `A party of bandits demands you give them all of your rations.  One of your family members tries to stand up to them, but the bandits are too much.  Out of fear and shock, you let the bandits shuffle through your wagon.  Someone in your family has died.`,
+                `Your family is complaining about the length of the trail.  You decide to rest for a day`
             ],
             randomEvent: ''
         }
