@@ -35,7 +35,9 @@ class Progress extends React.Component{
         // if(this.state.dead = Math.random() >= 0.90){
         //     this.props.family[Math.floor(Math.random()*this.props.family.length)].isDead = true
         // }
-        if(this.state.week >= 20){
+        if(this.props.family.length === 0){
+            this.setState({events: `GAME OVER`})
+        }else if(this.state.week >= 20){
             this.setState({events: 'Congratulations!  You made it!'})
         }
     }

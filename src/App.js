@@ -73,7 +73,7 @@ class App extends React.Component{
             {famList}
           </section>
           <section>
-            <Progress/>
+            <Progress family = {this.state.family} />
           </section>
           
         </div>
