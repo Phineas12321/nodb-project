@@ -58,7 +58,7 @@ class Progress extends React.Component{
             this.setState({events: `GAME OVER`})
         }else if(this.state.week === 1){
             this.setState({events: ''})
-        }else if(this.state.week >= 20){
+        }else if(this.state.week === 20){
             this.setState({events: 'Congratulations!  You made it!'})
         }
 

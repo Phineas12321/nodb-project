@@ -43,14 +43,6 @@ class Family extends React.Component{
                     </div>
                     
                 )}
-                
-                {/* <section className='input-button'>
-                    <input className='fam-input' onChange={this.handleChange} />
-                    <button className='family-button' onClick={() =>{this.props.addMember(this.state.userInput)}} >
-                        add
-                    </button>
-                </section> */}
-                
             </div>
         )
     }
